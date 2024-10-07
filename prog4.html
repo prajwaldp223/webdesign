@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UVCE College Information</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            height: 100%;
+        }
+        .frame {
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+        .left-frame {
+            flex: 0 0 20%;
+            background-color: #e9ecef;
+            border-right: 1px solid #ccc;
+        }
+        .center-frame {
+            flex: 1;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .right-frame {
+            flex: 0 0 20%;
+            background-color: #f7f7f7;
+            border-left: 1px solid #ccc;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+        .section-content {
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .nav-link {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #0056b3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .nav-link:hover {
+            background-color: #003d7a;
+        }
+        .remark-section {
+            margin-bottom: 20px;
+        }
+        .remark-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Frame: Navigation -->
+        <div class="frame left-frame">
+            <a href="#heritage" class="nav-link">Heritage</a>
+            <a href="#administration" class="nav-link">Administration</a>
+            <a href="#departments" class="nav-link">Departments</a>
+            <a href="#facilities" class="nav-link">Facilities</a>
+            <a href="#achievements" class="nav-link">Achievements</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Center Frame: Main Content -->
+        <div class="frame center-frame">
+            <div id="heritage" class="section-content">
+                <h2 class="section-title">Heritage of UVCE</h2>
+                <p>Founded in 1917 by Bharat Ratna Sir M. Visvesvaraya, the University Visvesvaraya College of Engineering (UVCE) is one of the oldest technical institutions in India. It has a rich legacy of over a century, contributing significantly to engineering education and research. The institution is known for producing some of the finest engineers who have made their mark globally.</p>
+            </div>
+
+            <div id="administration" class="section-content">
+                <h2 class="section-title">Administration</h2>
+                <p>The administration of UVCE is managed by a team of dedicated professionals, headed by the Principal. The college is affiliated with Bangalore University and follows the university's academic and administrative guidelines. Various committees oversee the smooth functioning of the institution, ensuring that it remains a leading engineering college in the country.</p>
+            </div>
+
+            <div id="departments" class="section-content">
+                <h2 class="section-title">Departments</h2>
+                <p>UVCE offers undergraduate, postgraduate, and doctoral programs across several engineering disciplines. These include:</p>
+                <ul>
+                    <li>Department of Civil Engineering</li>
+                    <li>Department of Mechanical Engineering</li>
+                    <li>Department of Electrical Engineering</li>
+                    <li>Department of Electronics and Communication Engineering</li>
+                    <li>Department of Computer Science and Engineering</li>
+                    <li>Department of Information Science and Engineering</li>
+                </ul>
+            </div>
+
+            <div id="facilities" class="section-content">
+                <h2 class="section-title">Facilities</h2>
+                <p>UVCE boasts state-of-the-art infrastructure and facilities to support both academic and extracurricular activities. The campus includes modern lecture halls, well-equipped laboratories, a comprehensive library, and various sports and recreational facilities. The campus is designed to foster a conducive environment for learning and personal growth.</p>
+            </div>
+
+            <div id="achievements" class="section-content">
+                <h2 class="section-title">Achievements</h2>
+                <p>UVCE has consistently been ranked among the top engineering institutions in India. It has a strong placement record, with students being recruited by leading companies across various sectors. The college has also made significant contributions to research and innovation, with several patents and publications to its name.</p>
+            </div>
+
+            <div id="contact" class="section-content">
+                <h2 class="section-title">Contact</h2>
+                <p>For more information, you can contact us at:</p>
+                <p>Email: uvce@university.edu</p>
+                <p>Phone: +91 80 2293 2000</p>
+                <p>Address: UVCE, K R Circle, Bengaluru, Karnataka, India - 560001</p>
+            </div>
+        </div>
+
+        <!-- Right Frame: Remarks/Notices -->
+        <div class="frame right-frame">
+            <div class="remark-section">
+                <div class="remark-title">Latest Announcements</div>
+                <p>Upcoming webinar on AI in Engineering - Sept 15, 2024.</p>
+            </div>
+            <div class="remark-section">
+                <div class="remark-title">Notices</div>
+                <p>Mid-term exams are scheduled for Oct 1-5, 2024.</p>
+            </div>
+            <div class="remark-section">
+                <div class="remark-title">Contact Us</div>
+                <p>Email: uvce@university.edu</p>
+                <p>Phone: +91 80 2293 2000</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
