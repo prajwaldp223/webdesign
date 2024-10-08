@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore - Home</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        /* Header styling */
+        .header {
+            background-color: #232f3e;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .header-logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header-search {
+            display: flex;
+            flex: 1;
+            margin-left: 20px;
+        }
+        .header-search input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+        .header-search button {
+            padding: 10px;
+            border: none;
+            background-color: #febd69;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        /* Navigation bar */
+        .nav-bar {
+            background-color: #232f3e;
+            padding: 10px 20px;
+        }
+        .nav-bar a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* Main content */
+        .main-content {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .category {
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 4px;
+            width: 300px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .category img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+        .category-title {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #232f3e;
+            text-align: center;
+        }
+        /* Footer styling */
+        .footer {
+            background-color: #232f3e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="header-logo">Online Bookstore</div>
+        <div class="header-search">
+            <input type="text" placeholder="Search for books...">
+            <button>Search</button>
+        </div>
+        <div>
+            <a href="login.html">Sign In</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Books</a>
+        <a href="deals.html">Deals</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="category">
+            <img src="fiction.jpg" alt="Fiction Books">
+            <div class="category-title">Fiction</div>
+        </div>
+        <div class="category">
+            <img src="nonfiction.jpg" alt="Non-Fiction Books">
+            <div class="category-title">Non-Fiction</div>
+        </div>
+        <div class="category">
+            <img src="children.jpg" alt="Children's Books">
+            <div class="category-title">Children's Books</div>
+        </div>
+        <div class="category">
+            <img src="textbooks.jpg" alt="Textbooks">
+            <div class="category-title">Textbooks</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <p>&copy; 2024 Online Bookstore. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

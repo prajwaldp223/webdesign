@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Audio, Video, and YouTube</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            flex:auto;
+            align-content: center;
+        }
+        .media-container {
+            margin-bottom: 20px;
+            align-items: center;
+            flex: auto;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Embedded Audio, Video, and YouTube Example</h1>
+
+    <div class="media-container">
+        <h2>Embedded Audio</h2>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>This is an example of an embedded audio file from the web.</p>
+    </div>
+
+    <div class="media-container">
+        <h2>Embedded Video</h2>
+        <video width="600" controls>
+            <source src="Wildlife Windows 7 Sample Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>This is an example of an embedded video file from the web.</p>
+    </div>
+
+    <div class="media-container">
+        <h2>Embedded YouTube Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wiur_AGatGU?si=9jsIX8LLlfpXXdHU" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>This is an example of an embedded YouTube video.</p>
+    </div>
+
+</body>
+</html>
