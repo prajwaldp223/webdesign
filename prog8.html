@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String and Email Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        input,
+        button {
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            background-color: #fafafa;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>String and Email Validation</h1>
+
+        <div>
+            <h2>Check Uppercase</h2>
+            <input type="text" id="uppercaseInput" placeholder="Enter a string">
+            <button onclick="checkUppercase()">Check Character</button>
+            <div id="uppercaseResult" class="result"></div>
+        </div>
+
+        <div>
+            <h2>Email Validation</h2>
+            <input type="text" id="emailInput" placeholder="Enter an email address">
+            <button onclick="validateEmail()">Validate Email</button>
+            <div id="emailResult" class="result"></div>
+        </div>
+
+        <div>
+            <h2>Format Number</h2>
+            <input type="text" id="numberInput" placeholder="Enter an integer">
+            <button onclick="formatNumber()">Format Number</button>
+            <div id="numberResult" class="result"></div>
+        </div>
+    </div>
+
+    <script>
+        // Function to check if the first character is uppercase
+        function checkUppercase() {
+            const input = document.getElementById('uppercaseInput').value;
+            const result = document.getElementById('uppercaseResult');
+            if (input.charAt(0) === input.charAt(0).toUpperCase()) {
+                result.textContent = 'The first character is uppercase.';
+                result.className = 'result';
+            } else {
+                result.textContent = 'The first character is not uppercase.';
+                result.className = 'result error';
+            }
+        }
+
+        // Function to validate email address
+        function validateEmail() {
+            const email = document.getElementById('emailInput').value;
+            const result = document.getElementById('emailResult');
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (emailPattern.test(email)) {
+                result.textContent = 'Valid email address.';
+                result.className = 'result';
+            } else {
+                result.textContent = 'Invalid email address.';
+                result.className = 'result error';
+            }
+        }
+
+        // Function to format number with commas as thousands separators
+        function formatNumber() {
+            const number = parseInt(document.getElementById('numberInput').value, 10);
+            const result = document.getElementById('numberResult');
+            if (!isNaN(number)) {
+                result.textContent = number.toLocaleString();
+                result.className = 'result';
+            } else {
+                result.textContent = 'Invalid integer.';
+                result.className = 'result error';
+            }
+        }
+    </script>
+</body>
+
+</html>
