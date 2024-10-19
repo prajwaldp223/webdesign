@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form - Online Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header,
+        .footer {
+            background-color: #232f3e;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .feedback-container {
+            width: 60%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+
+        .feedback-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .feedback-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feedback-container label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .feedback-container input[type="text"],
+        .feedback-container input[type="email"],
+        .feedback-container textarea,
+        .feedback-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .feedback-container input[type="radio"],
+        .feedback-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .feedback-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #232f3e;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .feedback-container .rating-group {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Feedback Form</h1>
+    </div>
+
+    <div class="feedback-container">
+        <h2>We Value Your Feedback</h2>
+        <form>
+            <!-- Name Field -->
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <!-- Email Field -->
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <!-- Rating Field -->
+            <label for="rating">How would you rate your experience?</label>
+            <div class="rating-group">
+                <label><input type="radio" name="rating" value="1"> 1</label>
+                <label><input type="radio" name="rating" value="2"> 2</label>
+                <label><input type="radio" name="rating" value="3"> 3</label>
+                <label><input type="radio" name="rating" value="4"> 4</label>
+                <label><input type="radio" name="rating" value="5"> 5</label>
+            </div>
+
+            <!-- Purchase Experience -->
+            <label for="experience">How was your purchase experience?</label>
+            <select id="experience" name="experience" required>
+                <option value="very-satisfied">Very Satisfied</option>
+                <option value="satisfied">Satisfied</option>
+                <option value="neutral">Neutral</option>
+                <option value="dissatisfied">Dissatisfied</option>
+                <option value="very-dissatisfied">Very Dissatisfied</option>
+            </select>
+
+            <!-- Favorite Genre -->
+            <label for="genre">What's your favorite book genre?</label>
+            <select id="genre" name="genre" required>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-Fiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="science-fiction">Science Fiction</option>
+                <option value="biography">Biography</option>
+                <option value="history">History</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Subscription Option -->
+            <label>Would you like to receive our newsletter?</label>
+            <label><input type="checkbox" name="subscribe" value="yes"> Yes, sign me up!</label>
+
+            <!-- Feedback Comments -->
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" name="comments" rows="6" placeholder="Enter your comments here..."></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Online Bookstore</p>
+    </div>
+</body>
+
+</html>

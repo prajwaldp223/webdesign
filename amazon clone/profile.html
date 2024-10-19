@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Online Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #232f3e;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .header button {
+            background-color: #febd69;
+            color: #232f3e;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .profile-container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .profile-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #232f3e;
+            font-size: 24px;
+        }
+        .profile-container p {
+            font-size: 18px;
+            margin: 15px 0;
+            color: #333;
+        }
+        .profile-container a {
+            color: #0073bb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .profile-container a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: #232f3e;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            margin-top: auto; /* Pushes the footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>User Profile</h1>
+        <button onclick="location.href='index.html'">Back to Home</button>
+    </div>
+
+    <div class="profile-container">
+        <h2>Welcome, [User's Name]</h2>
+        <p>Email: user@example.com</p>
+        <p>Joined: January 1, 2024</p>
+        <p>Order History: <a href="#">View Orders</a></p>
+        <p><a href="#">Edit Profile</a> | <a href="#">Logout</a></p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Online Bookstore</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Online Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .header, .footer {
+            background-color: #232f3e;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .login-container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #232f3e;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Login to Online Bookstore</h1>
+    </div>
+
+    <div class="login-container">
+        <h2>Sign In</h2>
+        <form>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.html">Sign up</a></p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Online Bookstore</p>
+    </div>
+</body>
+</html>
